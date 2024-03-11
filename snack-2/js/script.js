@@ -8,14 +8,13 @@ let sum = 0;
 
 // chiedere all'utente 5 numeri
 for (let i = 0; i < 5; i++){
-
     const userNumber = parseInt(prompt('Scrivi il tuo numero'));
 
     // aggiungere i numeri in un recipiente
     listNumber.push(userNumber);
 
     // sommare tutti i numeri dell'utente
-    sum = sum + userNumber;
+    sum += userNumber;
     console.log(sum)
 
 }
