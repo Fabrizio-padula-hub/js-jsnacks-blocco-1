@@ -3,17 +3,22 @@
 
 const listNumber = [];
 
+// tutti i numeri partono da 0
+let sum = 0;
+
 // chiedere all'utente 5 numeri
 for (let i = 0; i < 5; i++){
 
     const userNumber = parseInt(prompt('Scrivi il tuo numero'));
-    console.log('numero utente', userNumber)
 
     // aggiungere i numeri in un recipiente
     listNumber.push(userNumber);
-    console.log(listNumber)
+
+    // sommare tutti i numeri dell'utente
+    sum = sum + userNumber;
+    console.log(sum)
 
 }
 
-// sommare tutti i numeri dell'utente
-// stampare la somma di tutti i numeri
+ // stampare la somma di tutti i numeri
+ alert(`la somma dei tuoi numeri è ${sum}`);
